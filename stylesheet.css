@@ -1,0 +1,612 @@
+body {
+  background-color: #EEEAE3;
+  height:100%;
+}
+
+  /* mobil opbygning (grid) */
+
+  .gridsystem {
+    display: grid;
+    grid-template-areas:
+    'menu'
+    'main'
+    'footer';
+    height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    grid-area: menu;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+  /* menubar og logo */
+
+  .menubar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .menubar li a{
+    padding: 10px;
+    margin: 10px;
+    font-family: Georgia;
+    font-size: 15px;
+    text-decoration: none;
+    color: #523A34;
+  }
+
+  .menubar li a:hover {
+    color: #9CBCC7;
+  }
+
+  .logo {
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    margin: auto;
+    display: inline-grid;
+    position: absolute;
+    top: 4px;
+  }
+
+  /* mobil main område på forsiden */
+
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .forsidetekst {
+    font-family: Georgia;
+    font-size: 16px;
+    color: #523A34;
+    line-height: 40px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .forsideparagraf {
+    font-family: Georgia;
+    font-size: 16px;
+    color: #523A34;
+    line-height: 40px;
+    height: 700px;
+    width: 450px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 225px;
+  }
+
+  .projekter {
+    font-family: Georgia;
+    font-size: 18px;
+    color: #523A34;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 570px;
+  }
+
+  .projekter a{
+    font-family: Georgia;
+    text-decoration: none;
+    font-size: 18px;
+    color: #9CBCC7;
+    background-color: #253D5B;
+    border-radius: 40px;
+    padding: 10px 35px;
+  }
+
+  .projekter a:hover{
+    background: #9CBCC7;
+    color: #253D5B;
+  }
+
+  /* mobil footer */
+
+  .footer {
+    background-color: #916953;
+    text-align: center;
+  }
+
+  .fa-brands {
+    padding: 15px;
+    width: 15px;
+    text-align: center;
+    margin: 5px 5px;
+    border-radius: 50%
+  }
+
+  .fa-solid {
+    padding: 15px;
+    width: 15px;
+    text-align: center;
+    margin: 5px 5px;
+    border-radius: 50%
+  }
+
+  .fa-brands:hover {
+      opacity: 0.7;
+  }
+
+  .fa-solid:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook-f {
+    background-color: #916953;
+    color: #523A34;
+    text-decoration: none;
+  }
+
+  .fa-instagram   {
+    background-color: #916953;
+    color: #523A34;
+    text-decoration: none;
+  }
+
+  .fa-phone   {
+    background-color: #916953;
+    color: #523A34;
+    text-decoration: none;
+  }
+
+  .fa-envelope   {
+    background-color: #916953;
+    color: #523A34;
+    text-decoration: none;
+  }
+
+  /* kontakt på mobilen */
+
+  .kontaktsidetekst {
+    font-family: Georgia;
+    font-size: 16px;
+    color: #523A34;
+    line-height: 40px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kontaktside p{
+    font-family: Georgia;
+    font-size: 16px;
+    color: #523A34;
+    line-height: 40px;
+    height: 700px;
+    width: 450px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .kontaktoplysninger {
+    font-family: Georgia;
+    font-size: 18px;
+    color: #523A34;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 300px;
+  }
+
+  /* om mig */
+
+  .ommigoverskrift {
+    font-family: Georgia;
+    font-size: 16px;
+    color: #523A34;
+    height: 100px;
+    width: 450px;
+    line-height: 40px;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fotogrid {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,400px));
+    gap: 30px;
+    text-align: center;
+  }
+
+  .container {
+  font-size: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  margin-bottom: 80px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #9CBCC7;
+  }
+
+  .ommigtekster {
+  font-family: Georgia;
+  font-size: 14px;
+  line-height: 25px;
+  }
+
+  .billederommig {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+  }
+
+/* portfolio */
+.overskriftportfolio {
+  font-family: Georgia;
+  font-size: 16px;
+  color: #523A34;
+  height: 100px;
+  width: 450px;
+  line-height: 40px;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fotogrid {
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px,400px));
+  gap: 30px;
+  text-align: center;
+}
+
+.portfoliobilleder {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container p{
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* portfolio alle se mere knapper*/
+
+.semereappdesign a{
+  font-family: Georgia;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9CBCC7;
+  background-color: #253D5B;
+  border-radius: 40px;
+  padding: 10px 35px;
+}
+
+.semereappdesign a:hover{
+  background: #9CBCC7;
+  color: #253D5B;
+}
+
+.semerenyhedsbrev a{
+  font-family: Georgia;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9CBCC7;
+  background-color: #253D5B;
+  border-radius: 40px;
+  padding: 10px 35px;
+}
+
+.semerenyhedsbrev a:hover{
+  background: #9CBCC7;
+  color: #253D5B;
+}
+
+.semerereklamebillede a{
+  font-family: Georgia;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9CBCC7;
+  background-color: #253D5B;
+  border-radius: 40px;
+  padding: 10px 35px;
+}
+
+.semerereklamebillede a:hover{
+  background: #9CBCC7;
+  color: #253D5B;
+}
+
+.semerealbouncibo a{
+  font-family: Georgia;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9CBCC7;
+  background-color: #253D5B;
+  border-radius: 40px;
+  padding: 10px 35px;
+}
+
+.semerealbouncibo a:hover{
+  background: #9CBCC7;
+  color: #253D5B;
+}
+
+.semerebilledersomjeghartaget a{
+  font-family: Georgia;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9CBCC7;
+  background-color: #253D5B;
+  border-radius: 40px;
+  padding: 10px 35px;
+}
+
+.semerebilledersomjeghartaget a:hover{
+  background: #9CBCC7;
+  color: #253D5B;
+}
+
+.semereillustrator a{
+  font-family: Georgia;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9CBCC7;
+  background-color: #253D5B;
+  border-radius: 40px;
+  padding: 10px 35px;
+}
+
+.semereillustrator a:hover{
+  background: #9CBCC7;
+  color: #253D5B;
+}
+
+/* fotogrid 2 */
+
+.fotogrid2 {
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px,400px));
+  gap: 30px;
+}
+
+.portfoliobilleder2 {
+  height: 600px;
+  width: 400px;
+  object-fit: cover;
+  margin-left: 40px;
+}
+
+
+@media only screen and (min-width: 600px) {
+  /* tablet opbygning (grid) */
+
+  .gridsystem {
+    display: grid;
+    grid-template-areas:
+    'menu menu menu'
+    'main main main'
+    'footer footer footer';
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .menu {
+    grid-area: menu;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  /* menubar og logo */
+
+  .menubar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .menubar li a{
+    top: 10px;
+    right: 10px;
+    font-family: Georgia;
+    font-size: 15px;
+    text-decoration: none;
+    color: #523A34;
+  }
+
+  .menubar li a:hover {
+    color: #9CBCC7;
+  }
+
+  /* tablet main område på forsiden */
+
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .forsidetekst {
+    height: 400px;
+    width: 600px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 80px;
+  }
+
+  .forsideparagraf {
+    font-size: 18px;
+    height: 400px;
+    width: 600px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 225px;
+  }
+
+  .projekter {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 520px;
+  }
+
+  .kontaktsidetekst {
+    height: 400px;
+    width: 600px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: -120px;
+  }
+
+  .kontaktsidetekst p{
+    font-size: 18px;
+    height: 400px;
+    width: 600px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .kontaktoplysninger {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: -150px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+/* desktop opbygning (grid) */
+
+.gridsystem {
+  display: grid;
+  grid-template-areas:
+  'menu menu menu'
+  'main main main'
+  'footer footer footer';
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* menubar og logo */
+
+.menubar {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.menubar li a{
+  padding: 15px;
+  margin: 15px;
+  font-family: Georgia;
+  font-size: 17px;
+  text-decoration: none;
+  color: #523A34;
+}
+
+.menubar li a:hover {
+  color: #9CBCC7;
+}
+
+/* hjemmesidens main område på forsiden */
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.forsidetekst {
+  font-size: 18px;
+  line-height: 40px;
+  height: 400px;
+  width: 800px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-top: 80px;
+}
+
+.forsideparagraf {
+  font-size: 18px;
+  height: 400px;
+  width: 800px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-top: 225px;
+}
+
+.projekter {
+  font-size: 22px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-top: 450px;
+}
+}
